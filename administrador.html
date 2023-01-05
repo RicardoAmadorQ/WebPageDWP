@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoForce</title>
+    <link rel="stylesheet" href="./administrador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="Imagenes/Diseño_Autoforce.png" alt="logo">
+            <a href="./index.html">
+                <h1>AutoForce</h1>
+            </a>
+        </div>
+        <div class="header-right">
+            <a class="header-right__ingresar" href="./Ingresar/ingresar.html">
+                <i class="fa-solid fa-user"></i>
+                <p>Ingresar</p>
+            </a>
+            <a class="header-right__carrito" href="./carrito/carrito.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Carrito</p>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-left-cards">
+                <a class="nav-left-cards__perfil" href="./Perfil/perfil.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Perfil</p>
+                </a>
+            </div>
+            <div class="nav-left__searchBar">
+                <input type="text" class="nav__searchBar__text" name="buscar" id="buscar">
+                <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    <main>
+        <section class="tablas">
+            <div class="lbl-menu">
+                <label for="radio1">Usuarios</label>
+                <label for="radio2">Administradores</label>
+                <label for="radio3">Carros</label>
+                <label for="radio4">Productos</label>
+                <label for="radio5">Ofertas</label>
+            </div>
+            <div class="content">
+                <input type="radio" name="radio" id="radio1">
+                <div class="tab1">
+                    <div class="tab1-agregar">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <table class="tabla">
+                        <thead class="tabla-titulo">
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Telefono</th>
+                                <th>Dirección</th>
+                                <th><button class="agregar" id="aUsuario"><i class="fa-solid fa-plus"></i></button></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabla-cuerpo">
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/llanta.png" alt="Foto de perfil"></td>
+                                <td>Juan Roberto</td>
+                                <td>Juan@correo.com</td>
+                                <td>6181234569</td>
+                                <td>Al lado de mi vecino</td>
+                                <td><button id="bUsuario"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <input type="radio" name="radio" id="radio2">
+                <div class="tab2">
+                    <table class="tabla">
+                        <thead class="tabla-titulo">
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Telefono</th>
+                                <th>Dirección</th>
+                                <th><button class="agregar" id="aAdministrador"><i class="fa-solid fa-plus"></i></button></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabla-cuerpo">
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/llanta.png" alt="Foto de perfil"></td>
+                                <td>Jesús Návar</td>
+                                <td>Jesús@correo.com</td>
+                                <td>6181234569</td>
+                                <td>Al lado de mi vecino</td>
+                                <td><button id="bAdministrador"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/llanta.png" alt="Foto de perfil"></td>
+                                <td>Fernando Vargas</td>
+                                <td>Fernandp@correo.com</td>
+                                <td>6181234569</td>
+                                <td>Al lado de mi vecino</td>
+                                <td><button id="bAdministrador"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/llanta.png" alt="Foto de perfil"></td>
+                                <td>Ricardo Amador</td>
+                                <td>Ricardo@correo.com</td>
+                                <td>6181234569</td>
+                                <td>Al lado de mi vecino</td>
+                                <td><button id="bAdministrador"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <input type="radio" name="radio" id="radio3">
+                <div class="tab3">
+                    <table class="tabla">
+                        <thead class="tabla-titulo">
+                            <tr>
+                                <th>Foto</th>
+                                <th>Modelo</th>
+                                <th>Marca</th>
+                                <th>Año</th>
+                                <th><button class="agregar" id="aCarro"><i class="fa-solid fa-plus"></i></button></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabla-cuerpo">
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/aveo.png" alt="Foto del carro"></td>
+                                <td>Aveo</td>
+                                <td>Chevrolet</td>
+                                <td>2022</td>
+                                <td><button id="bCarro"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <input type="radio" name="radio" id="radio4">
+                <div class="tab4">
+                    <table class="tabla">
+                        <thead class="tabla-titulo">
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th><button class="agregar" id="aProducto"><i class="fa-solid fa-plus"></i></button></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabla-cuerpo">
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/llanta.png" alt="Foto del producto"></td>
+                                <td>Llanta 185/65R15 88H Bridgestone B250</td>
+                                <td>$5,390.00</td>
+                                <td>124</td>
+                                <td><button id="bProducto"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <input type="radio" name="radio" id="radio5">
+                <div class="tab5">
+                    <table class="tabla">
+                        <thead class="tabla-titulo">
+                            <tr>
+                                <th>Foto</th>
+                                <th>Producto</th>
+                                <th>Precio original</th>
+                                <th>Precio con descuento</th>
+                                <th><button class="agregar" id="aOferta"><i class="fa-solid fa-plus"></i></button></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabla-cuerpo">
+                            <tr>
+                                <td class="td-imagen"><img src="./Imagenes/ofertas.png" alt="Foto del producto"></td>
+                                <td>Llanta 185/65R15 88H Bridgestone B250</td>
+                                <td>$5,390.00</td>
+                                <td>$3,000.00</td>
+                                <td><button id="bOferta"><i class="fa-solid fa-pencil"></i></button></td>
+                                <td><button><i class="fa-solid fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="modal-usuario" id="modal-usuario">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="uFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="uFotografia" id="uFotografia">
+                <label for="uNombre">Nombre</label>
+                <input class="form__input" type="text" name="uNombre" id="uNombre">
+                <label for="uCorreo">Correo</label>
+                <input class="form__input" type="email" name="uCorreo" id="uCorreo">
+                <label for="uTelefono">Teléfono</label>
+                <input class="form__input" type="number" name="uTelefono" id="uTelefono">
+                <label for="uDireccion">Dirección</label>
+                <input class="form__input" type="text" name="uDireccion" id="uDireccion">
+                <input type="submit" value="Editar" class="form__button botonM" id="uEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="uCancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-aUsuario" id="modal-aUsuario">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="aauFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="auFotografia" id="auFotografia">
+                <label for="auNombre">Nombre</label>
+                <input class="form__input" type="text" name="auNombre" id="auNombre">
+                <label for="auCorreo">Correo</label>
+                <input class="form__input" type="email" name="auCorreo" id="auCorreo">
+                <label for="auTelefono">Teléfono</label>
+                <input class="form__input" type="number" name="auTelefono" id="auTelefono">
+                <label for="auDireccion">Dirección</label>
+                <input class="form__input" type="text" name="auDireccion" id="auDireccion">
+                <input type="submit" value="Añadir" class="form__button botonM" id="auEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="auCancelar">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modal-administrador" id="modal-administrador">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="aFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="aFotografia" id="aFotografia">
+                <label for="aNombre">Nombre</label>
+                <input class="form__input" type="text" name="aNombre" id="aNombre">
+                <label for="aCorreo">Correo</label>
+                <input class="form__input" type="email" name="aCorreo" id="aCorreo">
+                <label for="aTelefono">Teléfono</label>
+                <input class="form__input" type="number" name="aTelefono" id="aTelefono">
+                <label for="aDireccion">Dirección</label>
+                <input class="form__input" type="text" name="aDireccion" id="aDireccion">
+                <input type="submit" value="Editar" class="form__button botonM" id="aEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="aCancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-aAdministrador" id="modal-aAdministrador">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="aAFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="aAFotografia" id="aAFotografia">
+                <label for="aANombre">Nombre</label>
+                <input class="form__input" type="text" name="aANombre" id="aANombre">
+                <label for="aACorreo">Correo</label>
+                <input class="form__input" type="email" name="aACorreo" id="aACorreo">
+                <label for="aATelefono">Teléfono</label>
+                <input class="form__input" type="number" name="aATelefono" id="aATelefono">
+                <label for="aADireccion">Dirección</label>
+                <input class="form__input" type="text" name="aADireccion" id="aADireccion">
+                <input type="submit" value="Agregar" class="form__button botonM" id="aAEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="aACancelar">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modal-carro" id="modal-carro">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="cFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="cFotografia" id="cFotografia">
+                <label for="cModelo">Modelo</label>
+                <input class="form__input" type="text" name="cModelo" id="cModelo">
+                <label for="cMarca">Marca</label>
+                <input class="form__input" type="text" name="cMarca" id="cMarca">
+                <label for="cAño">Año</label>
+                <input class="form__input" type="number" name="cAño" id="cAño">
+                <input type="submit" value="Editar" class="form__button botonM" id="cEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="cCancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-aCarro" id="modal-aCarro">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="acFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="acFotografia" id="acFotografia">
+                <label for="acModelo">Modelo</label>
+                <input class="form__input" type="text" name="acModelo" id="acModelo">
+                <label for="acMarca">Marca</label>
+                <input class="form__input" type="text" name="acMarca" id="acMarca">
+                <label for="acAño">Año</label>
+                <input class="form__input" type="number" name="acAño" id="acAño">
+                <input type="submit" value="Agregar" class="form__button botonM" id="acEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="acCancelar">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modal-producto" id="modal-producto">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="pFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="pFotografia" id="pFotografia">
+                <label for="pNombre">Nombre</label>
+                <input class="form__input" type="text" name="pNombre" id="pNombre">
+                <label for="pPrecio">Precio</label>
+                <input class="form__input" type="number" name="pPrecio" id="pPrecio">
+                <label for="pCantidad">Cantidad</label>
+                <input class="form__input" type="number" name="pCantidad" id="pCantidad">
+                <input type="submit" value="Editar" class="form__button botonM" id="pEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="pCancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-aProducto" id="modal-aProducto">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="apFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="apFotografia" id="apFotografia">
+                <label for="apNombre">Nombre</label>
+                <input class="form__input" type="text" name="apNombre" id="apNombre">
+                <label for="apPrecio">Precio</label>
+                <input class="form__input" type="number" name="apPrecio" id="apPrecio">
+                <label for="apCantidad">Cantidad</label>
+                <input class="form__input" type="number" name="apCantidad" id="apCantidad">
+                <input type="submit" value="Agregar" class="form__button botonM" id="apEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="apCancelar">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="modal-oferta" id="modal-oferta">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="oFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="oFotografia" id="oFotografia">
+                <label for="oProducto">Producto</label>
+                <input class="form__input" type="text" name="oProducto" id="oProducto">
+                <label for="oPrecio">Precio original</label>
+                <input class="form__input" type="number" name="oPrecio" id="oPrecio">
+                <label for="oDescuento">Precio con descuento</label>
+                <input class="form__input" type="number" name="oDescuento" id="oDescuento">
+                <input type="submit" value="Editar" class="form__button botonM" id="oEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="oCancelar">
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-aOferta" id="modal-aOferta">
+        <div class="modal-container">
+            <form class="card-ingresar__form">
+                <label for="aoFotografia">Fotografía</label>
+                <input class="form__input" type="file" name="aoFotografia" id="aoFotografia">
+                <label for="aoProducto">Producto</label>
+                <input class="form__input" type="text" name="aoProducto" id="aoProducto">
+                <label for="aoPrecio">Precio original</label>
+                <input class="form__input" type="number" name="aoPrecio" id="aoPrecio">
+                <label for="aoDescuento">Precio con descuento</label>
+                <input class="form__input" type="number" name="aoDescuento" id="aoDescuento">
+                <input type="submit" value="Agregar" class="form__button botonM" id="aoEditar">
+            </form>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="aoCancelar">
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/20834a20cc.js" crossorigin="anonymous"></script>
+    <script src="./administrador.js"></script>
+</body>
+
+</html>

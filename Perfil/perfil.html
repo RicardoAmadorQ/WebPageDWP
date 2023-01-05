@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoForce | Registrarse</title>
+    <link rel="stylesheet" href="./perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="section-usuario">
+            <div class="usuario-encabezado">
+                <img src="../Imagenes/Diseño_Autoforce.png" alt="logo">
+                <a href="../index.html">
+                    <h1>AutoForce</h1>
+                </a>
+            </div>
+            <form action="" class="usuario-informacion">
+                <div class="usuario-informacion-personal">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="text" name="correo" placeholder="Correo@ejemplo.com">
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="text" name="telefono">
+                    <button id="cContraseña">Cambiar contraseña</button>
+                </div>
+                <div class="usuario-informacion-extra">
+                    <label for="fecha">Fecha de nacimieto</label>
+                    <input type="date" name="fecha" id="fecha">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado" class="usuario-informacion__estado">
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Ciudad de México">Ciudad de México</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="México">México</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion">
+                    <label for="cp">Código postal</label>
+                    <input type="number" name="cp">
+                </div>
+                <div class="usuario-informacion-confirmar">
+                    <input type="submit" value="Cambiar">
+                </div>
+            </form>
+        </section>
+        <section class="section-carro">
+            <div class="section-carro-titulo">
+                <h1>Automovil</h1>
+            </div>
+            <div class="section-carro-informacion">
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo">
+                <label for="marca">Marca</label>
+                <input type="text" name="marca">
+                <label for="año">Año</label>
+                <input type="number">
+            </div>
+        </section>
+    </main>
+
+    <section class="modal-contraseña" id="modalContraseña">
+        <div class="modal-container">
+            <form class="card-ingresar__titulo">
+                <label for="correo">Antigua contraseña</label>
+                <input type="password" name="correo" placeholder="********">
+            </form>
+            <div class="card-ingresar__form">
+                <label for="nuevaContraseña">Nueva contraseña</label>
+                <input class="form__input" type="password" name="nuevaContraseña" id="nuevaContraseña" placeholder="*********">
+                <label for="confContraseña">Confirmar contraseña</label>
+                <input class="form__input" type="password" name="nuevaContraseña" id="confirmarContraseña" placeholder="*********">
+                <input type="submit" value="Cambiar contraseña" class="form__button" id="bCambiar">
+            </div>
+            <div class="card-cambiar-confirmar">
+                <input type="submit" value="Cancelar" class="form__button" id="bCancelar">
+            </div>
+        </div>
+    </section>
+    <script src="./perfil.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoForce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="Imagenes/Diseño_Autoforce.png" alt="logo">
+            <a href="./index.html">
+                <h1>AutoForce</h1>
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="./administrador.html" class="header-right__administrar">
+                <i class="fa-solid fa-hammer"></i>
+                <p>Administrador</p>
+            </a>
+            <a class="header-right__ingresar" href="./Ingresar/ingresar.html">
+                <i class="fa-solid fa-user"></i>
+                <p>Ingresar</p>
+            </a>
+            <a class="header-right__carrito" href="./carrito/carrito.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Carrito</p>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-left-cards">
+                <a class="nav-left-cards__perfil" href="./Perfil/perfil.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Perfil</p>
+                </a>
+            </div>
+            <div class="nav-left__searchBar">
+                <input type="text" class="nav__searchBar__text" name="buscar" id="buscar">
+                <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    <main>
+        <div class="main-left">
+            <figure>
+                <img src="Imagenes/ofertas.png" alt="Imagenes de ofertas">
+            </figure>
+        </div>
+        <div class="main-right">
+            <a class="main-right__ubicacion" href="./Ubicacion/ubicacion.html">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Ubicación de la tienda</p>
+            </a>
+            <a class="main-right__sugerencias" href="./Sugerencias/sugerencias.html">
+                <i class="fa-solid fa-file-circle-question"></i>
+                <p>Sugerencias</p>
+            </a>
+            <a class="main-right__atencion" href="./Atencion/atencion.html">
+                <i class="fa-solid fa-user-tie"></i>
+                <p>Atención al cliente</p>
+            </a>
+        </div>
+        <div class="main-down" id="main-down">
+            <div class="main-down__filters">
+                <p>Filtrar por: </p>
+                <label for="año">Año</label>
+                <select name="año" id="año">
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                </select>
+                <label for="motor">Motor</label>
+                <select name="motor" id="motor">
+                    <option value="ejemplo-1">ejemplo-1</option>
+                    <option value="ejemplo-2">ejemplo-2</option>
+                    <option value="ejemplo-3">ejemplo-3</option>
+                    <option value="ejemplo-4">ejemplo-4</option>
+                    <option value="ejemplo-5">ejemplo-5</option>
+                </select>
+                <label for="modelo">Modelo</label>
+                <select name="modelo" id="modelo">
+                    <option value="ejemplo-1">ejemplo-1</option>
+                    <option value="ejemplo-2">ejemplo-2</option>
+                    <option value="ejemplo-3">ejemplo-3</option>
+                    <option value="ejemplo-4">ejemplo-4</option>
+                    <option value="ejemplo-5">ejemplo-5</option>
+                </select>
+                <label for="marca">Marca</label>
+                <select name="marca" id="marca">
+                    <option value="ejemplo-1">ejemplo-1</option>
+                    <option value="ejemplo-2">ejemplo-2</option>
+                    <option value="ejemplo-3">ejemplo-3</option>
+                    <option value="ejemplo-4">ejemplo-4</option>
+                    <option value="ejemplo-5">ejemplo-5</option>
+                </select>
+                <label for="carrro">Filtrar por carro</label>
+                <input type="checkbox" name="carro" id="carro">
+            </div>
+            <div class="main-down__search">
+                <div class="nav-left__searchBar">
+                    <input type="text" class="nav__searchBar__text" name="buscar" id="buscar">
+                    <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+            </div>
+            <div class="main-down__products">
+                <div class="main-down-card">
+                    <div class="main-down-card__imagen">
+                        <img src="./Imagenes/llanta.png" alt="Imagen del producto">
+                    </div>
+                    <div class="main-down-card__informacion">
+                        <p class="informacion-nombre">Llanta 185/65R15 88H Bridgestone B250</p>
+                        <p class="informacion-precio">$5,390.00</p>
+                        <div class="informacion-opciones">
+                            <div class="informacion-opciones__cantidades">
+                                <label for="cantidad">Cantidad:</label>
+                                <select name="cantidad" id="cantidad" class="informacion-opciones__cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="informacion-opciones__agregar">Enviar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-down-card">
+                    <div class="main-down-card__imagen">
+                        <img src="./Imagenes/llanta.png" alt="Imagen del producto">
+                    </div>
+                    <div class="main-down-card__informacion">
+                        <p class="informacion-nombre">Llanta 185/65R15 88H Bridgestone B250</p>
+                        <p class="informacion-precio">$5,390.00</p>
+                        <div class="informacion-opciones">
+                            <div class="informacion-opciones__cantidades">
+                                <label for="cantidad">Cantidad:</label>
+                                <select name="cantidad" id="cantidad" class="informacion-opciones__cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="informacion-opciones__agregar">Enviar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-down-card">
+                    <div class="main-down-card__imagen">
+                        <img src="./Imagenes/llanta.png" alt="Imagen del producto">
+                    </div>
+                    <div class="main-down-card__informacion">
+                        <p class="informacion-nombre">Llanta 185/65R15 88H Bridgestone B250</p>
+                        <p class="informacion-precio">$5,390.00</p>
+                        <div class="informacion-opciones">
+                            <div class="informacion-opciones__cantidades">
+                                <label for="cantidad">Cantidad:</label>
+                                <select name="cantidad" id="cantidad" class="informacion-opciones__cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button class="informacion-opciones__agregar">Enviar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/20834a20cc.js" crossorigin="anonymous"></script>
+    <script src="./code.js"></script>
+</body>
+
+</html>
